@@ -6,136 +6,162 @@
   
     <title>Materialize CSS Framework Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
-    
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    
+    <!-- Compiled and minified Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
             
   
   </head>
   
-  <body>
+  <body bgcolor="#eceff1">
     
-    <!--
     <nav>
-        <div class="nav-wrapper light blue accent-1 z-depth-1">
-          <a href="#" class="brand-logo center"> Daniel A. Galarza Pineda</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="badges.html">Resume</a></li>
-            <li><a href="collapsible.html">Contact</a></li>
-          </ul>
-        </div>
-    </nav> -->
+      <div class="nav-wrapper light-blue accent-3 z-depth-1">
+        <a href="#" class="brand-logo center"> Daniel A. Galarza Pineda</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="collapsible.html">Download Resume
+            <i class="mdi-content-send right"><i class="material-icons">file_download</i></i></a></li>
+        </ul>
+      </div>
+    </nav>
     
+    <div class="container">
+    <div class="intro light-blue accent-3 z-depth-1">
+      <h1 class="center-align grey-text text-lighten-5">Daniel Galarza</h1>
+      <h5 class="center-align grey lighten-4 grey-text text-darken-1">Web and Mobile Developer</h5>
+    </div>
+    
+
+    
+    <!-- ******************* Sliding Images ******************* 
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="http://www.planwallpaper.com/static/images/waterdrops-bright-hd-wallpaper-507074.jpg"> <!-- random image -->
+          <img src="http://www.planwallpaper.com/static/images/waterdrops-bright-hd-wallpaper-507074.jpg"> <!-- random image 
           <div class="caption center-align">
             <h1>Welcome To My Portfolio</h1>
             <h3>By Daniel Galarza</h3>
           </div>
         </li>
         <li>
-          <img src="http://www.planwallpaper.com/static/images/bokeh-wallpaper.jpg"> <!-- random image -->
+          <img src="http://www.planwallpaper.com/static/images/bokeh-wallpaper.jpg"> <!-- random image 
           <div class="caption center-align">
-            <h1>GitHub: https://github.com/DanielGalarza</h1>
-            <h1></h1>
+            <h1>GitHub:</h1>
+            <h3>https://github.com/DanielGalarza</h3>
           </div>
         </li>
         <li>
-          <img src="http://www.planwallpaper.com/static/images/Baltic_Sea_Wallpaper_By_Martz90_2560X1600_2.jpg"> <!-- random image -->
+          <img src="http://www.planwallpaper.com/static/images/Baltic_Sea_Wallpaper_By_Martz90_2560X1600_2.jpg"> <!-- random image 
           <div class="caption center-align">
             <h1>Computer Science Major</h1>
             <h3>Mathematics Minor</h3>
           </div>
         </li>
         <li>
-          <img src="http://wallpaperstube.com/wp-content/uploads/2014/12/computer_technology_pc_software_wallpaper_hd_desktop.jpg"> <!-- random image -->
+          <img src="http://wallpaperstube.com/wp-content/uploads/2014/12/computer_technology_pc_software_wallpaper_hd_desktop.jpg"> <!-- random image 
           <div class="caption center-align">
             <h1 class="light grey darken-3">Check Out My Full Resume By Clicking On The Resume Button</h1>
             <h3 class="light grey darken-3">Thanks For Checking Out My Page!</h3>
           </div>
         </li>
       </ul>
-    </div>
+    </div -->
     
-    
+    <!-- ****************** About Container ****************** -->
     <div class="container about">
-      <h1>about me</h1>
-      <h6>let me introduce my self</h6>
+      <h1 class="center-align light-blue accent-3 white-text">About Me</h1>
       <hr>
       <div class="row">
+        
         <div class="col s12 m4 l4">
           <h6>Story</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+        
         <div class="col s12 m4 l4">
           <h6>Profile</h6>
-          <div class="card blue-grey darken-1">
+          <div class="card light-blue accent-3 z-depth-3">
             <div class="card-content white-text">
               <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
             </div>
-            <div class="card-action">
+            <div class="card-action light-blue accent-3">
               <a href="#">Link</a>
               <a href='#'>Link</a>
             </div>
           </div>
         </div>
+        
+        <div class="col s12 m4 l4">
+          <h6>Story</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+      </div> <!-- End of Row -->
+      
+      <!-- **************** Job History: Collapsable Card **************** -->
+      
+      <div class="container deep-orange lighten-2">
+        <div class="col s12 m4 l4">
+          <h1 class="center-align white-text">Skills</h1>
+            <!--i class="material-icons md-48">done_all</i> Skills</h1-->
+          <ul class="collapsible deep-orange lighten-4 z-depth-2">
+            <li class="active">
+              <div class="collapsible-header center-align white-text active deep-orange lighten-2"><i class="mdi-av-web"></i>Programming Skills</div>
+              <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-editor-format-align-justify"></i>Personal Skills</div>
+              <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-av-play-shopping-bag"></i>Video Editor</div>
+              <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-editor-insert-comment"></i>Support Asst.</div>
+              <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col s12 m4 l4">
-        <h1>current jobs</h1>
-        <ul class="collapsible">
-          <li class="active">
-            <div class="collapsible-header"><i class="mdi-av-web"></i>Designer</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="mdi-editor-format-align-justify"></i>Developer</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="mdi-av-play-shopping-bag"></i>Video Editor</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="mdi-editor-insert-comment"></i>Support Asst.</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </div> <!-- End of About Container -->
   
+    <!-- ****************  Contact Container ****************** 
     <div class="container contact">
-      <h1>contact</h1>
+      <h1 class="white-text">Contact</h1>
       <h6>get in touch with me</h6>
       <hr>
-      <div class="row">
+      <div class="row"> <!---------------------------
         <div class="col s12 m6 l6">
           <div class="row">
             <form class="col s12">
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s6 white-text">
                   <input id="first_name" type="text" class="validate">
                   <label for="first_name">First Name</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col s6 white-text">
                   <input id="last_name" type="text" class="validate">
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 white-text">
                   <input id="email" type="email" class="validate">
                   <label for="email">E-Mail</label>
                 </div>
               </div>
-              <textarea class="materialize-textarea" placeholder="Your Message" required></textarea>
+              <textarea class="materialize-textarea white-text" placeholder="Your Message" required></textarea>
               <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="mdi-content-send right"></i>
               </button>
@@ -151,19 +177,95 @@
           <p>qnimate.com</p>
         </div>
       </div>
-    </div>
-  
+    </div>  -->
     
-    <footer>
+    
+    
+    <!-- ************** Contact Card ************* -->
+    <div class="col s12 m4 l4">
+      <div class="container deep-orange lighten-2">
+        <!--div class="card blue-grey lighten-5"-->
+        <div class="card-content blue-grey lighten-5 black-text">
+          <div class="container contact">
+            <h1 class="center-align black-text">Contact </h1>
+            <h6>Get In Touch!</h6>
+            <hr>
+            <div class="row"> <!--------------------------->
+              <div class="col s12 m6 l6 black-text">
+                <div class="row">
+                  <form class="col s12 black-text">
+                    <div class="row">
+                      <div class="input-field col s6 black-text">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6 black-text">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12 black-text">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">E-Mail</label>
+                      </div>
+                    </div>
+                    <textarea class="materialize-textarea black-text" placeholder="Your Message" required></textarea>
+                    <button class="waves-effect waves-light deep-orange lighten-2 btn" type="submit" name="action">Submit
+                      <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col s12 m6 l6 contact-holder">
+                <h6 class="mdi-action-home">Address</h6>
+                <p>Nr. 6, 21 Awesome Street, London, UK</p>
+                <h6 class="mdi-hardware-phone-android">Phone Number</h6>
+                <p>+91 9912776151</p>
+                <h6 class="mdi-action-open-in-browser">Website</h6>
+                <p>qnimate.com</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+          
+        <!--/div-->
+      </div>
+    </div>
+    
+    
+  </div>
+  
+    <!-- ************** Footer ************** -->
+    
+    <footer class="page-footer light-blue accent-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="footer-copyright">
         <div class="container">
-         © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">Link</a>
+        © 2016 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
       </div>
     </footer>
     
-    <!-- JS initializer for the Slider -->
+    <!-- **************** JS initializer for the Slider ***************** -->
     <script>
       $(document).ready(function() {
         $('.slider').slider({full_width: true});
