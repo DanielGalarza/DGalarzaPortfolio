@@ -14,30 +14,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     
     <!-- Compiled and minified Material Design Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             
   
   </head>
   
   <body bgcolor="#eceff1">
     
-    <nav>
-      <div class="nav-wrapper light-blue accent-3 z-depth-1">
-        <a href="#" class="brand-logo center"> Daniel A. Galarza Pineda</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="collapsible.html">Download Resume
-            <i class="mdi-content-send right"><i class="material-icons">file_download</i></i></a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <div class="container">
-    <div class="intro light-blue accent-3 z-depth-1">
-      <h1 class="center-align grey-text text-lighten-5">Daniel Galarza</h1>
-      <h5 class="center-align grey lighten-4 grey-text text-darken-1">Web and Mobile Developer</h5>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper light-blue darken-2 z-depth-1">
+          <a href="#!" class="brand-logo center"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Download Resume
+              <i class="mdi-content-send right"><i class="material-icons">file_download</i></i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Download Resume
+              <i class="mdi-content-send right"><i class="material-icons">file_download</i></i></a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
     
+    <header class="light-blue accent-3">
+      <div align="center"><img src="https://media.licdn.com/media/p/8/005/06b/2f1/15ea8bf.jpg" alt class="circle responsive-img center-align" width="150px" height="150px" ></div>
+      <h1 class="center-align grey-text text-lighten-5">Daniel Galarza</h1>
+      <h1 class="center-align grey-text text-lighten-5"></h1>
+      <h5 class="center-align grey lighten-4 grey-text text-darken-1">Web and Mobile Developer</h5>
+    </header>
+          
+    
+    <div class="container">
 
     
     <!-- ******************* Sliding Images ******************* 
@@ -76,7 +89,7 @@
     
     <!-- ****************** About Container ****************** -->
     <div class="container about">
-      <h1 class="center-align light-blue accent-3 white-text">About Me</h1>
+      <h1 class="center-align grey lighten-1 white-text">About Me</h1>
       <hr>
       <div class="row">
         
@@ -110,25 +123,25 @@
       
       <!-- **************** Job History: Collapsable Card **************** -->
       
-      <div class="container deep-orange lighten-2">
+      <div class="container ">
         <div class="col s12 m4 l4">
           <h1 class="center-align white-text">Skills</h1>
             <!--i class="material-icons md-48">done_all</i> Skills</h1-->
-          <ul class="collapsible deep-orange lighten-4 z-depth-2">
+          <ul class="collapsible orange lighten-3 z-depth-2" id="collapse">
             <li class="active">
-              <div class="collapsible-header center-align white-text active deep-orange lighten-2"><i class="mdi-av-web"></i>Programming Skills</div>
+              <div class="collapsible-header center-align white-text active orange darken-1 "><i class="mdi-av-web"></i>Programming Skills</div>
               <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
             <li>
-              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-editor-format-align-justify"></i>Personal Skills</div>
+              <div class="collapsible-header center-align white-text orange darken-1"><i class="mdi-editor-format-align-justify"></i>Personal Skills</div>
               <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
             <li>
-              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-av-play-shopping-bag"></i>Video Editor</div>
+              <div class="collapsible-header center-align white-text orange darken-1"><i class="mdi-av-play-shopping-bag"></i>Video Editor</div>
               <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
             <li>
-              <div class="collapsible-header center-align white-text deep-orange lighten-2"><i class="mdi-editor-insert-comment"></i>Support Asst.</div>
+              <div class="collapsible-header center-align white-text orange darken-1"><i class="mdi-editor-insert-comment"></i>Support Asst.</div>
               <div class="collapsible-body center-align black-text"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
           </ul>
@@ -182,6 +195,7 @@
     
     
     <!-- ************** Contact Card ************* -->
+    <hr>
     <div class="col s12 m4 l4">
       <div class="container deep-orange lighten-2">
         <!--div class="card blue-grey lighten-5"-->
@@ -211,7 +225,7 @@
                       </div>
                     </div>
                     <textarea class="materialize-textarea black-text" placeholder="Your Message" required></textarea>
-                    <button class="waves-effect waves-light deep-orange lighten-2 btn" type="submit" name="action">Submit
+                    <button class="waves-effect waves-light orange darken-1 btn" type="submit" name="action">Submit
                       <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
                     </button>
                   </form>
@@ -239,7 +253,7 @@
   
     <!-- ************** Footer ************** -->
     
-    <footer class="page-footer light-blue accent-3">
+    <footer class="page-footer light-blue darken-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -270,6 +284,19 @@
       $(document).ready(function() {
         $('.slider').slider({full_width: true});
       });
+      
+      $(".button-collapse").sideNav();
+      
+      var options = [
+        {selector: '#collapse', offset: 400, callback: function() {
+          Materialize.showStaggeredList("#collapse");
+        } },
+        {selector: '#image-test', offset: 500, callback: function() {
+          Materialize.fadeInImage("#image-test");
+        } }
+      ];
+      
+      Materialize.scrollFire(options);
     </script>
     
   </body>
