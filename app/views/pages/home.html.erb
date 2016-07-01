@@ -70,12 +70,13 @@
           </div>
         </div>
         
+
         <div class="row">
           <div class="col s12 m12 l6 blue-grey-text text-darken-3">
             <h6>Interests</h6>
             <div class="card medium z-depth-3">
               <div class="card-image">
-                <img src="http://www.urbansplatter.com/wp-content/uploads/2014/08/Den-Skyline-4-14-09-33-of-39.jpg">
+                <img src="http://www.urbansplatter.com/wp-content/uploads/2014/08/Den-Skyline-4-14-09-33-of-39.jpg" height="180px">
                 <span class="card-title">Denver, CO</span>
               </div>
               <div class="card-content">
@@ -85,12 +86,13 @@
               </div>
             </div>
           </div>
+
           
           <div class="col s12 m12 l6 blue-grey-text text-darken-3">
             <h6>Education</h6>
             <div class="card medium z-depth-3">
               <div class="card-image">
-                <img src="https://lh3.googleusercontent.com/-w4sxdXKZE1c/V3W-sBwrqhI/AAAAAAAACgU/wRflULU2YU8jBCZPBJ-ZJZyq7Yt8NtAHQCL0B/w1172-h640-no/Screen%2BShot%2B2016-06-30%2Bat%2B6.50.01%2BPM.png">
+                <img src="https://lh3.googleusercontent.com/-w4sxdXKZE1c/V3W-sBwrqhI/AAAAAAAACgU/wRflULU2YU8jBCZPBJ-ZJZyq7Yt8NtAHQCL0B/w1172-h640-no/Screen%2BShot%2B2016-06-30%2Bat%2B6.50.01%2BPM.png"  height="180px">
                 <!--img src="http://www.urbansplatter.com/wp-content/uploads/2014/08/Den-Skyline-4-14-09-33-of-39.jpg"-->
                 <!--span class="card-title">Denver, CO</span-->
               </div>
@@ -210,8 +212,8 @@
           </div>
         </div>
         <div class="row center">
-          <button class="waves-effect waves-light deep-orange accent-2 z-depth-3 btn-large">
-            <a class="white-text" href="https://github.com/DanielGalarza">  
+          <button class="waves-effect waves-light deep-orange accent-2 z-depth-3 btn-large" onclick="window.open('https://github.com/DanielGalarza', '_blank')">
+            <a class="white-text">
               <img src = 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png' style='vertical-align: middle' width="32px" height="32px"/>All GitHub Repos</a>
           </button>
         </div>
@@ -300,31 +302,58 @@
                     <div class="row">
                       <div class="input-field col s6 black-text">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="first_name" type="text" class="validate black-text">
+                        <input id="first_name" type="text" required="" aria-required="true" class="validate black-text">
                         <label for="first_name">First Name</label>
                       </div>
                       <div class="input-field col s6 black-text">
-                        <input id="last_name" type="text" class="validate black-text">
+                        <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
                         <label for="last_name">Last Name</label>
                       </div>
                     </div>
                     
                     <div class="row">
-                      <div class="input-field col s12 black-text">
+                      <div class="input-field col s12 m6 black-text">
                         <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate black-text">
+                        <input id="email" type="email" required="" aria-required="true" class="validate black-text">
                         <label for="email">E-Mail</label>
                       </div>
+                      <div class="input-field col s12 m6 black-text">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
+                        <label for="last_name">Phone</label>
+                      </div>
                     </div>
-
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">mode_edit</i>
-                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2" class="">Message</label>
-                      <button class="waves-effect waves-light deep-orange accent-2 z-depth-4 btn" type="submit" name="action">Submit
-                        <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
-                      </button>
+                    
+                    <div class="row">
+                      <div class="input-field col m6 s12">
+                          <i class="material-icons prefix">work</i>
+                          <input id="company" type="text" class="validate black-text">
+                          <label for="company">Company</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <label>Communication Preferences</label>
+                        <br/>
+                      </div>
+                      <div class="input-field col m3 s3 center-align">
+                        <input name="group2" type="checkbox" id="emailComm" />
+                        <label for="emailComm">Email</label>
+                      </div>
+                      <div class="input-field col m3 s3 center-align">
+                        <input name="group2" type="checkbox" id="callComm" />
+                        <label for="callComm">Call Me</label>
+                      </div>
                     </div>
+                    
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2" class="">Message</label>
+                        <button class="waves-effect waves-light deep-orange accent-2 z-depth-4 btn" type="submit" name="action">Submit
+                          <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
+                        </button>
+                      </div>
+                    </div>   
                   </form>
                 </div>
               </div>
@@ -349,15 +378,15 @@
             </div>
             <h5 class="footer-header center-align white-text">Connect With Me!</h5>
             <div class="title_div center-align">
-                <button class="waves-effect waves-light light-blue accent-2 z-depth-4 btn">
-                  <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/daniel-galarza-91a25499">   
+                <button class="waves-effect waves-light light-blue accent-2 z-depth-4 btn" onclick="window.open('https://www.linkedin.com/in/daniel-galarza-91a25499', '_blank')">
+                  <a class="grey-text text-lighten-3">   
                     <img src = 'http://static1.squarespace.com/static/540e1971e4b0131a4d81b4a4/54664b47e4b000e37a0a17f6/54664b47e4b02db36ef346fb/1419897377471/linkedin_circle.png' style='vertical-align: middle' width="30px" height="30px"/> Linkedin</a>
                 </button>
-                <button class="waves-effect waves-light red z-depth-4 btn">
-                  <a class="white-text" href="https://plus.google.com/u/0/104070259664104801497/posts/p/pub">  
+                <button class="waves-effect waves-light red z-depth-4 btn" onclick="window.open('https://plus.google.com/u/0/104070259664104801497/posts/p/pub', '_blank')">
+                  <a class="white-text">  
                     <img src = 'https://lh3.googleusercontent.com/-IMGb4CkWC98/VeXR6rWlM1I/AAAAAAAA7c4/aC-I28R6_psCNtxmIXAtNuMja5wCYUR9A/w1664-h1664/GooglePlus-logos-02.png' style='vertical-align: middle' width="30px" height="30px"/> Google+</a>
                 </button>
-                <button class="waves-effect waves-light grey lighten-3 z-depth-4 btn">
+                <button class="waves-effect waves-light grey lighten-3 z-depth-4 btn" onclick="window.open('https://github.com/DanielGalarza', '_blank')">
                   <a class="blue-grey-text text-darken-4" href="https://github.com/DanielGalarza">  
                     <img src = 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png' style='vertical-align: middle' width="32px" height="32px"/>GitHub</a>
                 </button>
