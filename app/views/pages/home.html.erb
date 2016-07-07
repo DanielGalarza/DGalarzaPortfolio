@@ -23,7 +23,7 @@
     <header>
       <div class="navbar-fixed">
         <nav class="z-depth-0">
-          <div class="nav-wrapper  indigo accent-2">
+          <div class="nav-wrapper  indigo darken-1 z-depth-1">
             <a href="#!" class="brand-logo center"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="left hide-on-med-and-down">
@@ -39,44 +39,55 @@
       </div>
     </header> <!-- End of Nav Bar -->
     
-    <header class="indigo accent-2">
-      <div align="center"><img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/1381438_639909656063924_1988687158_n.jpg?oh=db7cac1a0efe31cb7d04d041ac2184b2&oe=57FEA9CB" class="circle responsive-img center-align" alt class="circle responsive-img center-align" width="150px" height="150px" >
-        <h1 class="center-align grey-text text-lighten-5">Daniel A. Galarza Pineda</h1>
-          <button class="waves-effect waves-light indigo accent-1 btn" onclick="window.open('https://drive.google.com/file/d/0B15S3MArfZ9DTHZBdGpsTEkyRVk/view', '_blank')">
-            <a class="white-text">View Resume
-              <i class="mdi-content-send right material-icons">description</i> 
-          </button>
-        <h1 class="center-align grey-text text-lighten-5"></h1>
-        <p class="center-align grey lighten-4 grey-text text-darken-1"><strong class="indigo-text  darken-4">Web and Mobile Developer</strong></p>
+    <header class="section indigo accent-2">
+      <div align="center">
+        <img src="https://scontent-dfw1-1.xx.fbcdn.net/v/t1.0-9/1381438_639909656063924_1988687158_n.jpg?oh=db7cac1a0efe31cb7d04d041ac2184b2&oe=57FEA9CB" class="circle responsive-img center-align" alt class="circle responsive-img center-align" width="150px" height="150px" >
+        <h1 class="center-align grey-text text-lighten-5 light-italic" style="font-weight: 300;">Daniel A. Galarza Pineda</h1>
+        <ul>
+          <li>
+            <p class="center-align grey lighten-4 center" style="border-radius: 4px; line-height: 1; margin: .1em 0 .6em; display: inline-block; font-style: italic; padding: 6px 10px;">
+              <strong class="indigo-text  darken-4">Jr. Mobile & Web Developer</strong>
+            </p>
+            
+          </li>
+          <li>
+            <button class="waves-effect waves-light indigo accent-1 btn" onclick="window.open('https://drive.google.com/file/d/0B15S3MArfZ9DTHZBdGpsTEkyRVk/view', '_blank')">
+              <a class="white-text">View Resume
+                <i class="mdi-content-send right material-icons">description</i> 
+            </button>
+          </li>
+        </ul>
+            
       </div>
-
+      
     </header> <!-- End of Header -->
 
     <!-- ****************** About Container ****************** -->
-    
-    <div class="container">
-      <div class="section">
-        <div class="container about">
-          <h2 class="header center-align title-header">About Me</h2>
-          <hr>
-          <div class="row">
-            <div class="col s12 m12 l12 blue-grey-text text-darken-3">
-              <p class="flow-text" align="center">
-                  Hello! I'm <strong class="indigo-text  darken-4">Daniel Galarza</strong> and I am a <strong>Jr. Java, Android and Web 
-                  Developer</strong> based in
-                  Denver, CO. I enjoy working on <strong class="indigo-text lighten-1">usable, clean and
-                  practical</strong> projects.
-              </p>
-            </div>
-          </div>
-        </div> 
-      </div>
-    </div> <!-- End of About Container -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="http://denverdreamcenter.org/wp-content/uploads/2014/05/DenverSkyline.png"></div>
+      <!--div class="container">
+        <div class="section" -->
+          <div class="container about">
+            <!--div class="row"-->
+              <div class="col s12 m12 l12">
+                <h2 class="white-text" align="center" style="font-weight: 300; vertical-align: middle;">
+                    Hello! I'm <strong>Daniel Galarza</strong> and I am a <strong>Jr. Java, Android and Web 
+                    Developer</strong> based in
+                    <strong>Denver, CO</strong>. I enjoy working on <strong>usable, clean and
+                    practical</strong> projects.
+                </h2>
+              </div>
+            <!--/div>
+          </div> 
+        </div-->
+      </div> <!-- End of About Container -->
+  </div>
     
     <!-- ****************** Card Container ****************** -->
     
     <div class="section indigo accent-2">
       <div class="container">
+        <h2 class="header center-align title-header  white-text">About Me</h2>
         <div  class="row center">
           <div class="col s12 m6 blue-grey-text text-darken-3 center">
             <h6 class="white-text">Interests</h6>
@@ -128,110 +139,115 @@
       
     <!-- **************** Job History: Collapsable Card **************** -->
     
-    <div class="container" style="width: 65%">
-      <div class="section">
-        <div class="col s12 m10 l10">
-          <h2 class="header center-align title-header">Skills</h2>
-            <!--i class="material-icons md-48">done_all</i> Skills</h1-->
-          <ul class="collapsible popout  z-depth-4" id="collapse" data-collapsible="expandable">
-            <li class="active">
-              <div class="collapsible-header  white-text active indigo accent-2 "><i class="mdi-av-web"></i>Programming Skills</div>
-              <div class="collapsible-body center-align white black-text">
-                <ul>
-                  <li class="flow-text" style="font-weight: 300">
-                    <strong class=" blue-grey-text text-darken-3">Programming Languages:</strong>
-                  </li>
-                  <li class="flow-text" style="font-weight: 300">
-                    <span class="red-text">Java</span> 
-                    •  <span class="yellow-text text-accent-4">Python</span> 
-                    •  <span class="blue-text">C</span> 
-                    •  <span class="green-text">XML</span> 
-                    •  <span class="orange-text">HTML</span> 
-                    •  <span class="pink-text">CSS</span> 
-                    •  <span class="red-text">JavaScript</span> 
-                    •  <span class="grey-text">JSON</span> 
-                    •  <span class="orange-text">Swift</span> 
-                    •  <span class="indigo-text">LISP</span>
-                  </li>
-                  <li class="flow-text" style="font-weight: 300">
-                    <strong class=" blue-grey-text text-darken-3">Experience:</strong>
-                  </li>
-                  <li class="flow-text" style="font-weight: 300">
-                    Object Oriented software development • API’s •  Android SDK •  OpenGL •  GUI’s, 
-                    Firebase Database •  SQLite •  Familiarity with iOS Development •  JUnit •  Materialize CSS front-end framework
-                  </li>
-                  <li class="flow-text" style="font-weight: 300">
-                    <strong class=" blue-grey-text text-darken-3">IDE's:</strong>
-                  </li>
-                  <li class="flow-text" style="font-weight: 300">
-                    <span class="green-text">Android Studio</span> 
-                    •  <span class="pink-text">JetBrains (Appcode, IntelliJ, WebStorm etc.)</span> 
-                    •  <span class="blue-text">Xcode</span> 
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header white-text indigo accent-2"><i class="mdi-editor-format-align-justify"></i>Personal Skills</div>
-              <div class="collapsible-body center-align white black-text">
-                <ul>
-                  <li class="flow-text" style="font-weight: 300"> 
-                    <span class="blue-text">Eager</span> 
-                    • <span class="red-text">Passionate</span>
-                    • <span class="green-text">Self-Motivated</span> 
-                    • <span class="orange-text">Algorithmic Problem Solving</span> 
-                    • <span class="indigo-text">Diligent</span> 
-                    • <span class="teal-text">Superb Communication Skills (oral and written)</span> 
-                    • <span class="red-text">Excellent Multitasker</span>  
-                    • <span class="indigo-text">A Team Player!</span> 
-                    • <span class="blue-text">Strong problem solving skills and patience for software testing/debugging</span> 
-                    • <span class="deep-orange-text">Bilingual (English & Spanish)</span> 
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header white-text indigo accent-2"><i class="mdi-av-play-shopping-bag"></i>IT Skill Set</div>
-              <div class="collapsible-body center-align white black-text">
-                <ul>
-                  <li class="flow-text" style="font-weight: 300">
-                    <span class="teal-text">Provide technical assistance and support for incoming queries and issues related to computer systems, software, and hardware</span>
-                    • <span class="red-text">Desktop administration/deployment, reimaging, and repair</span> 
-                    • <span class="blue-text">Advanced troubleshooting</span>   
-                    • <span class="orange-text">Proficient with Windows, Mac, and Linux Operating Systems</span>
-                    • <span class="indigo-text">Writing SOP's</span>  
-                    • <span class="cyan-text">Train computer users</span> 
-                    • <span class="indigo-text">Maintain daily performance of computer systems</span> 
-                    • <span class="green-text">Respond to email messages for customers seeking help</span> 
-                    • <span class="deep-orange-text">Resolve technical problems with Local Area Networks (LAN), Wide Area Networks (WAN), and other systems</span>
-                    • <span class="teal-text">Install computer peripherals for users</span>  
-                    • <span class="blue-text">Follow up with customers to ensure issue has been resolved</span>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header white-text indigo accent-2"><i class="mdi-editor-insert-comment"></i>Career Interests</div>
-              <div class="collapsible-body center-align white black-text">
-                <ul class="flow-text">
-                  <li>
-                    <span class="green-text">Android Development</span>  
-                    • <span class="orange-text">iOS Development</span>  
-                    • <span class="indigo-text">Web Development</span>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+    <div class="parallax-container" style="height: 800px">
+      <div class="parallax">
+        <img src="https://pixabay.com/static/uploads/photo/2015/08/23/21/49/mount-mckinley-903509_960_720.jpg">
+      </div>
+      <div class="container" style="width: 65%">
+        <div class="section">
+          <div class="col s12 m10 l10">
+            <h2 class="header center-align title-header deep-orange-text text-accent-2" style="border-radius: 4px; line-height: 1; margin: .1em 0 .6em; display: inline-block; font-style: italic; padding: 6px 10px;">Skills</h2>
+              <!--i class="material-icons md-48">done_all</i> Skills</h1-->
+            <ul class="collapsible popout  z-depth-4" id="collapse" data-collapsible="accordion">
+              <li class="active">
+                <div class="collapsible-header  white-text active indigo accent-2 "><i class="mdi-av-web"></i>Programming Skills</div>
+                <div class="collapsible-body center-align white black-text">
+                  <ul>
+                    <li class="flow-text" style="font-weight: 300">
+                      <strong class=" blue-grey-text text-darken-3">Programming Languages:</strong>
+                    </li>
+                    <li class="flow-text" style="font-weight: 300">
+                      <span class="red-text">Java</span> 
+                      •  <span class="yellow-text text-accent-4">Python</span> 
+                      •  <span class="blue-text">C</span> 
+                      •  <span class="green-text">XML</span> 
+                      •  <span class="orange-text">HTML</span> 
+                      •  <span class="pink-text">CSS</span> 
+                      •  <span class="red-text">JavaScript</span> 
+                      •  <span class="grey-text">JSON</span> 
+                      •  <span class="orange-text">Swift</span> 
+                      •  <span class="indigo-text">LISP</span>
+                    </li>
+                    <li class="flow-text" style="font-weight: 300">
+                      <strong class=" blue-grey-text text-darken-3">Experience:</strong>
+                    </li>
+                    <li class="flow-text" style="font-weight: 300">
+                      Object Oriented software development • API’s •  Android SDK •  OpenGL •  GUI’s, 
+                      Firebase Database •  SQLite •  Familiarity with iOS Development •  JUnit •  Materialize CSS front-end framework
+                    </li>
+                    <li class="flow-text" style="font-weight: 300">
+                      <strong class=" blue-grey-text text-darken-3">IDE's:</strong>
+                    </li>
+                    <li class="flow-text" style="font-weight: 300">
+                      <span class="green-text">Android Studio</span> 
+                      •  <span class="pink-text">JetBrains (Appcode, IntelliJ, WebStorm etc.)</span> 
+                      •  <span class="blue-text">Xcode</span> 
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header white-text indigo accent-2"><i class="mdi-editor-format-align-justify"></i>Personal Skills</div>
+                <div class="collapsible-body center-align white black-text">
+                  <ul>
+                    <li class="flow-text" style="font-weight: 300"> 
+                      <span class="blue-text">Eager</span> 
+                      • <span class="red-text">Passionate</span>
+                      • <span class="green-text">Self-Motivated</span> 
+                      • <span class="orange-text">Algorithmic Problem Solving</span> 
+                      • <span class="indigo-text">Diligent</span> 
+                      • <span class="teal-text">Superb Communication Skills (oral and written)</span> 
+                      • <span class="red-text">Excellent Multitasker</span>  
+                      • <span class="indigo-text">A Team Player!</span> 
+                      • <span class="blue-text">Strong problem solving skills and patience for software testing/debugging</span> 
+                      • <span class="deep-orange-text">Bilingual (English & Spanish)</span> 
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header white-text indigo accent-2"><i class="mdi-av-play-shopping-bag"></i>IT Skill Set</div>
+                <div class="collapsible-body center-align white black-text">
+                  <ul>
+                    <li class="flow-text" style="font-weight: 300">
+                      <span class="teal-text">Provide technical assistance and support for incoming queries and issues related to computer systems, software, and hardware</span>
+                      • <span class="red-text">Desktop administration/deployment, reimaging, and repair</span> 
+                      • <span class="blue-text">Advanced troubleshooting</span>   
+                      • <span class="orange-text">Proficient with Windows, Mac, and Linux Operating Systems</span>
+                      • <span class="indigo-text">Writing SOP's</span>  
+                      • <span class="cyan-text">Train computer users</span> 
+                      • <span class="indigo-text">Maintain daily performance of computer systems</span> 
+                      • <span class="green-text">Respond to email messages for customers seeking help</span> 
+                      • <span class="deep-orange-text">Resolve technical problems with Local Area Networks (LAN), Wide Area Networks (WAN), and other systems</span>
+                      • <span class="teal-text">Install computer peripherals for users</span>  
+                      • <span class="blue-text">Follow up with customers to ensure issue has been resolved</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header white-text indigo accent-2"><i class="mdi-editor-insert-comment"></i>Career Interests</div>
+                <div class="collapsible-body center-align white black-text">
+                  <ul class="flow-text">
+                    <li>
+                      <span class="green-text">Android Development</span>  
+                      • <span class="orange-text">iOS Development</span>  
+                      • <span class="indigo-text">Web Development</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      
-    </div> <!-- End of Collapsable Card -->
+      </div> <!-- End of Collapsable Card -->
+    </div>
 
     <!-- ****************    Repos Section    **************** -->
     
     <div class="section  indigo accent-2">
-      <div class="container"id="card1">
+      <div class="container" id="card1">
         <div class="row">
           <h2 class="header center-align title-header deep-orange-text text-accent-2">Repositories</h2>
           <div class="row">
@@ -345,87 +361,92 @@
 
     <!-- ********************   Contact Card   ***************** -->
     
-    <div class="col s12 m4 l4">
-      <div class="section">
-        <div class="container " style="width: 95%">
-          <!--div class="card blue-grey lighten-5"-->
-          <div class="card-content black-text">
-            <div class="container contact">
-              <h2 class="header center-align title-header">Contact</h2>
-              <p class="flow-text" align="center">
-                  Use the <strong>contact form</strong> to get in touch with me! I will try to reply within 
-                  <strong class="indigo-text">24 hours</strong> of your message. I look <strong class="indigo-text">forward</strong> to hearing from <strong>you!</strong>
-              </p>
-              <hr>
-              <div class="row"> 
-                <div class="col s12 m12 l12 black-text">
-                  <div class="row">
-                    <form class="col s12 black-text">
-                      
-                      <div class="row">
-                        <div class="input-field col s6 black-text">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input id="first_name" type="text" required="" aria-required="true" class="validate black-text">
-                          <label for="first_name">First Name</label>
+    <div class="parallax-container" style="height: 800px">
+      <div class="parallax">
+        <img src="https://static.pexels.com/photos/19578/pexels-photo.jpg">
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="section">
+          <div class="container " style="width: 95%">
+            <!--div class="card blue-grey lighten-5"-->
+            <div class="card-content black-text">
+              <div class="container contact">
+                <h2 class="header center-align title-header">Contact</h2>
+                <p class="flow-text" align="center">
+                    Use the <strong>contact form</strong> to get in touch with me! I will try to reply within 
+                    <strong class="indigo-text">24 hours</strong> of your message. I look <strong class="indigo-text">forward</strong> to hearing from <strong>you!</strong>
+                </p>
+                <hr>
+                <div class="row"> 
+                  <div class="col s12 m12 l12 black-text">
+                    <div class="row">
+                      <form class="col s12 black-text">
+                        
+                        <div class="row">
+                          <div class="input-field col s6 black-text">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="first_name" type="text" required="" aria-required="true" class="validate black-text">
+                            <label for="first_name">First Name</label>
+                          </div>
+                          <div class="input-field col s6 black-text">
+                            <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
+                            <label for="last_name">Last Name</label>
+                          </div>
                         </div>
-                        <div class="input-field col s6 black-text">
-                          <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
-                          <label for="last_name">Last Name</label>
+                        
+                        <div class="row">
+                          <div class="input-field col s12 m6 black-text">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" required="" aria-required="true" class="validate black-text">
+                            <label for="email">E-Mail</label>
+                          </div>
+                          <div class="input-field col s12 m6 black-text">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
+                            <label for="last_name">Phone</label>
+                          </div>
                         </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="input-field col s12 m6 black-text">
-                          <i class="material-icons prefix">email</i>
-                          <input id="email" type="email" required="" aria-required="true" class="validate black-text">
-                          <label for="email">E-Mail</label>
+                        
+                        <div class="row">
+                          <div class="input-field col m6 s12">
+                              <i class="material-icons prefix">work</i>
+                              <input id="company" type="text" class="validate black-text">
+                              <label for="company">Company</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <label>Communication Preferences</label>
+                            <br/>
+                          </div>
+                          <div class="input-field col m3 s3 center-align">
+                            <input name="group2" type="checkbox" id="emailComm" />
+                            <label for="emailComm">Email</label>
+                          </div>
+                          <div class="input-field col m3 s3 center-align">
+                            <input name="group2" type="checkbox" id="callComm" />
+                            <label for="callComm">Call Me</label>
+                          </div>
                         </div>
-                        <div class="input-field col s12 m6 black-text">
-                          <i class="material-icons prefix">phone</i>
-                          <input id="last_name" type="text" required="" aria-required="true" class="validate black-text">
-                          <label for="last_name">Phone</label>
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="input-field col m6 s12">
-                            <i class="material-icons prefix">work</i>
-                            <input id="company" type="text" class="validate black-text">
-                            <label for="company">Company</label>
-                        </div>
-                        <div class="input-field col s6">
-                          <label>Communication Preferences</label>
-                          <br/>
-                        </div>
-                        <div class="input-field col m3 s3 center-align">
-                          <input name="group2" type="checkbox" id="emailComm" />
-                          <label for="emailComm">Email</label>
-                        </div>
-                        <div class="input-field col m3 s3 center-align">
-                          <input name="group2" type="checkbox" id="callComm" />
-                          <label for="callComm">Call Me</label>
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">mode_edit</i>
-                          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                          <label for="icon_prefix2" class="">Message</label>
-                          <button class="waves-effect waves-light deep-orange accent-2 z-depth-4 btn" type="submit" name="action">Submit
-                            <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
-                          </button>
-                        </div>
-                      </div>   
-                    </form>
+                        
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2" class="">Message</label>
+                            <button class="waves-effect waves-light deep-orange accent-2 z-depth-4 btn" type="submit" name="action">Submit
+                              <i class="mdi-content-send right"> <i class="material-icons"> send</i> </i>
+                            </button>
+                          </div>
+                        </div>   
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div> <!-- End of Contact Card -->
+      </div> <!-- End of Contact Card -->
+    </div>
 
   
     <!-- ************** Footer ************** -->
@@ -491,6 +512,11 @@
       ];
       
       Materialize.scrollFire(cards);
+      
+      
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
     </script>
     
     <!-- *****************    CSS Styles    ******************************** -->
@@ -519,7 +545,7 @@
           text-decoration: none;
       }
       
-      .title_div a.last {
+      .title_div .last {
           margin-right: 0;
       }
       
